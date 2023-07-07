@@ -1,9 +1,52 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url('./Courgette-Regular.ttf');
+}
+
 .App {
   margin: 0;
   padding: 0;
 }
 
-.home-body {
+/* Navbar Styles */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 25%;
+}
+
+.top-text {
+  font-size: 70px;
+  color: #ff1074;
+}
+
+.navbar-title {
+  font-family: 'Courgette';
+  margin: 0;
+}
+
+.github-icon {
+  display: space-evenly;
+  align-items: center;
+  color: #000000;
+}
+
+.github-icon a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.github-icon a:hover {
+  color: #555555;
+}
+
+
+.box-ctn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +58,7 @@
   height: 250px;
   background-color: #272727dc;
   border: 1px solid #444444;
-  margin: 100px 5px 10px 10px;
+  margin: 10px 5px 10px 10px;
 }
 
 .container-2 {
@@ -64,7 +107,43 @@
   resize: none;
 }
 
+.input-result-container {
+  height: 100%;
+  overflow-y: auto;
+}
+
 .input-result {
-  
   color: #fff;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0 25%;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.btn {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #ff1074;
+  color: #fff;
+  opacity: 1;
+  border: 1px solid #b6b6b6;
+  border-radius: 7px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff107494;
 }
