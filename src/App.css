@@ -124,8 +124,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0;
   margin: 0 25%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ff1074;
+}
+
+.footer a:hover {
+  color: #444444;
 }
 
 .footer p {
@@ -137,8 +146,8 @@
   padding: 10px 20px;
   background-color: #ff1074;
   color: #fff;
+  border: none;
   opacity: 1;
-  border: 1px solid #b6b6b6;
   border-radius: 7px;
   font-size: 18px;
   transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -146,4 +155,67 @@
 
 .btn:hover {
   background-color: #ff107494;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 15%;
+  }
+
+  .top-text {
+    font-size: 25px;
+  }
+
+  .github-icon a {
+    font-size: 25px;
+  }
+  
+  .container-1 {
+    width: 70%;
+    height: 210px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .container-2 {
+    width: 70%;
+    height: 270px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .input-text {
+    margin: 10px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .footer{
+    padding: 0;
+    margin: 0 15%;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
 }

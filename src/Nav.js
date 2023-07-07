@@ -8,7 +8,7 @@ export default function Nav() {
         <p className="navbar-title">Beshyfier</p>
       </div>
       <div className="github-icon">
-        <a href="https://github.com/your-github-repo-url" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kaizenics/beshyfier-text-modifier" target="_blank" rel="noopener noreferrer">
           <AiFillGithub/>
         </a>
       </div>

@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
   const [inputText, setInputText] = useState('');
+  const [buttonText, setButtonText] = useState('Copy');
   const textareaRef = useRef();
 
   useEffect(() => {
@@ -14,6 +15,18 @@ function App() {
   function handleInputChange(event) {
     setInputText(event.target.value);
   }
+
+  function handleCopyBtn() {
+    const inputResult = document.querySelector('.input-result');
+    const textToCopy = inputResult.innerText;
+    navigator.clipboard.writeText(textToCopy);
+    setButtonText('Copied!');
+  }
+
+  setTimeout(() => {
+    setButtonText('Copy');
+  }, 3000);
+
   
   return (
     <>
@@ -46,8 +59,8 @@ function App() {
           </div>
 
           <div className="footer">
-            <p>© 2023 Niko Soriano</p>
-              <button className="btn">Copy</button>
+            <p>© 2023 <a href="https://facebook.com/kaisernics" target="_blank">Niko Soriano</a></p>
+              <button className="btn" onClick={handleCopyBtn}>{buttonText}</button>
             </div>
         </section>
       </div>
