@@ -4,7 +4,7 @@
 
 
 <div align="center">
-  <h2>Beshyfier</h2>
+  <h1>Beshyfier</h1>
   <p>Mini Project for fun Text Modifier</p>
 </div>
 
